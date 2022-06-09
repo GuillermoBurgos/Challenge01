@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style_callenge.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imagenes/Logo.png" class="a">
+        </header>
+        <section class="encriptar">
+ 
+            <textarea type="text" class="input_text" placeholder="Ingrese texto" cols="30" rows="16"></textarea>
+            <h6><img src="imagenes/bi_exclamation-circle-fill.png"height="12" width="12"> Solo letras minusculas sin acento</h6>
+            <div class="botonera">
+                <button type="button" onclick="btnEncriptar()" class="botonEncriptar">Encriptar</button>
+                <button type="button" onclick="btnDesencriptar()"class="botonDesencriptar">Desencriptar</button>
+            </div>
+            
+        </section>
+        <section class="desencriptar">
+            <div id="muneco">
+                <img src="imagenes/Muñeco.png" class="munecodib">
+                <p class="cartel1">Ningún mensaje fue encontrado</p>
+                <p class="cartel2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>
+      
+            <textarea type="text" class="input_text_area" placeholder="Aqui va la salida" cols="6" rows="16" readonly id="areaD"></textarea>
+           
+            <button type="button" onclick="btnCopiar()"class="botonCopiar" id="copiar">Copiar</button>
+
+        </section>
+        
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
